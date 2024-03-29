@@ -23,17 +23,6 @@ README="https://github.com/RobertDataWow/hii-setup-script#post-installation-inst
 #  
 #===============================================================================
 
-
-# IDEs to make availabe. Please also adjust code to brew cask install
-options[0]="Visual Studio Code";    devtoolchoices[0]="+"
-options[1]="Jetbrains Toolbox";     devtoolchoices[1]=""
-options[2]="Pycharm";               devtoolchoices[2]=""
-options[3]="Goland";                devtoolchoices[3]=""
-options[4]="Webstorm";              devtoolchoices[4]=""
-options[5]="Sublime Text";          devtoolchoices[5]=""
-options[6]="iTerm2";                devtoolchoices[6]=""
-
-
 #===============================================================================
 #  Functions
 #===============================================================================
