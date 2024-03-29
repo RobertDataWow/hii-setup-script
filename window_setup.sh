@@ -259,7 +259,12 @@ printHeading "Installing Applications"
         printStep "Docker Compose for Window"              "choco install docker-compose -y"
     fi
 
-    printStep "Table Plus"                                 "choco install tableplus -y"
+    if command -v make &> /dev/null; then
+        printDivider
+        echo "✔ Make already installed. Skipping"
+    else
+        printStep "Make for Window"                        "choco install make -y"
+    fi
 printDivider
 
 
@@ -288,19 +293,6 @@ printHeading "Installing Node and Yarn through NVM"
 printDivider
 
 
-
-# Install System Tweaks
-printHeading "System Tweaks"
-    echo "✔ Finder: Show status bar and path bar"
-        defaults write com.apple.finder ShowStatusBar -bool true
-        defaults write com.apple.finder ShowPathbar -bool true
-    echo "✔ Finder: Show the ~/Library folder"
-        chflags nohidden ~/Library
-    printDivider
-printDivider
-
-
-
 #===============================================================================
 #  Setup Project
 #===============================================================================
@@ -325,9 +317,6 @@ printDivider
 printHeading "Setting Up Backend"
       cd $BACKEND_DIR
       cat .env.development > .env
-printDivider
-      echo "✔ Stopping All Brew Services"
-      brew services stop --all
 printDivider
       echo "✔ Checkout Main"
       git checkout origin/main
@@ -381,7 +370,7 @@ echo ""
 echo ""
 tput bold # bold text
 read -n 1 -r -s -p $'             Press any key to to open the link in a browser...\n\n'
-open $README
+start $README
 tput sgr0 # reset text
 
 echo ""
