@@ -25,6 +25,7 @@ For window you have options to use tablePlus
 choco install tableplus -y
 ```
 
+**Editing Code**\
 Install vscode (IDE)
 ```bash
 choco install vscode -y
