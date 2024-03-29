@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="v3.4.0"
+VERSION="v1"
 #===============================================================================
 #   A shell script to help with the quick setup and installation of tools and 
 #   applications for Hii.
@@ -19,7 +19,7 @@ VERSION="v3.4.0"
 #      Use the email and name you use for Github
 #
 #   5. Follow the Post Installation Instructions in the Readme:
-README="https://github.com/vendasta/setup-new-computer-script#post-installation-instructions"
+README="https://github.com/RobertDataWow/hii-setup-script#post-installation-instructions"
 #  
 #===============================================================================
 
@@ -504,7 +504,7 @@ printDivider
 printDivider
       echo "✔ Initializing Docker Image"
       docker-compose build
-      docker compose -f ./robot/docker-compose.yml build
+      docker-compose -f ./robot/docker-compose.yml build
 printDivider
       echo "✔ Initializing Database"
       make up
