@@ -19,7 +19,7 @@ VERSION="v1"
 #      Use the email and name you use for Github
 #
 #   5. Follow the Post Installation Instructions in the Readme:
-README="https://github.com/RobertDataWow/hii-setup-script#post-installation-instructions"
+README="https://github.com/RobertDataWow/hii-setup-script#window-post-installation-instructions"
 #  
 #===============================================================================
 

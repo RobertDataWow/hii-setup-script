@@ -18,7 +18,20 @@ You can fix this by running the following command in your terminal:
 compaudit | xargs chmod g-w
 ```
 
+## Window Post Installation Instructions
+**Viewing Database**\
+For window you have options to use tablePlus
+```bash
+choco install tableplus -y
+```
 
+Install vscode (IDE)
+```bash
+choco install vscode -y
+```
+
+
+## Command Tips
 **Installing and Upgrading Node and NPM versions**\
 There is a handy command in your `.bash_profile` and `.zsh_profile` that will automatically install your chosen version of Node and NPM, re-install any global npm packages (like angular cli), and set the newly installed version as default.
 ```sh
