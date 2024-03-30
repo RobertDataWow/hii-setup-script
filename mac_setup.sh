@@ -295,12 +295,12 @@ printDivider
 
 # Install  Apps
 printHeading "Installing Applications"
-    if [[ -d "/Applications/Google Chrome.app" ]]; then
-        printDivider
-        echo "✔ Google Chrome already installed. Skipping"
-    else
-        printStep "Google Chrome"               "brew install --cask google-chrome"
-    fi
+#     if [[ -d "/Applications/Google Chrome.app" ]]; then
+#         printDivider
+#         echo "✔ Google Chrome already installed. Skipping"
+#     else
+#         printStep "Google Chrome"               "brew install --cask google-chrome"
+#     fi
 
     if [[ -d "/Applications/Docker.app" ]]; then
         printDivider
@@ -312,19 +312,19 @@ printHeading "Installing Applications"
         ln -sfn /opt/homebrew/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose
     fi
 
-    if [[ -d "/Applications/Postico 2.app" ]]; then
-        printDivider
-        echo "✔ Postico already installed. Skipping"
-    else
-        printStep "Postico (DB Viewing)"                     "brew install --cask postico"
-    fi
+#     if [[ -d "/Applications/Postico 2.app" ]]; then
+#         printDivider
+#         echo "✔ Postico already installed. Skipping"
+#     else
+#         printStep "Postico (DB Viewing)"                     "brew install --cask postico"
+#     fi
 
-    if [[ -d "/Applications/Visual Studio Code.app" ]]; then
-        printDivider
-        echo "✔ Visual Studio Code already installed. Skipping"
-    else
-        printStep "Visual Studio Code (IDE)"                     "brew install --cask visual-studio-code"
-    fi
+#     if [[ -d "/Applications/Visual Studio Code.app" ]]; then
+#         printDivider
+#         echo "✔ Visual Studio Code already installed. Skipping"
+#     else
+#         printStep "Visual Studio Code (IDE)"                     "brew install --cask visual-studio-code"
+#     fi
 printDivider
 
 
@@ -355,14 +355,14 @@ printDivider
 
 
 # Install System Tweaks
-printHeading "System Tweaks"
-    echo "✔ Finder: Show status bar and path bar"
-        defaults write com.apple.finder ShowStatusBar -bool true
-        defaults write com.apple.finder ShowPathbar -bool true
-    echo "✔ Finder: Show the ~/Library folder"
-        chflags nohidden ~/Library
-    printDivider
-printDivider
+# printHeading "System Tweaks"
+#     echo "✔ Finder: Show status bar and path bar"
+#         defaults write com.apple.finder ShowStatusBar -bool true
+#         defaults write com.apple.finder ShowPathbar -bool true
+#     echo "✔ Finder: Show the ~/Library folder"
+#         chflags nohidden ~/Library
+#     printDivider
+# printDivider
 
 
 
