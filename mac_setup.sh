@@ -404,9 +404,8 @@ printDivider
       docker-compose build
       docker-compose -f ./robot/docker-compose.yml build
 printDivider
-      echo "✔ Initializing Database"
+      echo "✔ Starting Image"
       make up
-      make reset-init-db
 
 # Frontend
 printHeading "Setting Up Frontend"
